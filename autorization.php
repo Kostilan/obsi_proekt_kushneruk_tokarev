@@ -7,15 +7,15 @@ echo "<script>location.href='/';</script>";
 
 ?>
 <div class="container-form">
-    <h3>ВХОД</h3>
+    <h2>ВХОД</h3>
     <form action="/autorizationDB.php" method="POST">
       <div class="form-control">
         <label for="login" class="form-label">Логин</label> <br>
-        <input class="input" type="text" name="login" class="form-control" id="login" placeholder="Введите ваш логин" required pattern="[A-Za-z]{1,200}">
+        <input class="input" type="text" name="login" class="form-control" id="login" placeholder="Введите ваш логин" required pattern="[a-zA-Z0-9]+{1,100}">
       </div>
       <div class="form-control">
         <label for="password" class="form-label">Пароль</label> <br>
-        <input class="input" type="password" name="password" class="form-control" id="password" placeholder="Введите ваш пароль" required pattern="{6,200}">
+        <input class="input" type="password" name="password" class="form-control" id="password" placeholder="Введите ваш пароль" required pattern="{6,100}">
       </div>
       <br>
       <button class="button" type="submit" class="btn btn-primary">Войти</button>

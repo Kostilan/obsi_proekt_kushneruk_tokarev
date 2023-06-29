@@ -27,14 +27,10 @@ if($id_filter){
 }
 $result_rooms = mysqli_query($con, $sql_room);
 $rooms = $result_rooms->fetch_all(MYSQLI_ASSOC);
-// $sql_categories = "SELECT * FROM categorys";
-// $result_categories = mysqli_query($con, $sql_categories);
-// $categories = mysqli_fetch_all($result_categories);
-// echo mysqli_error($con);
  ?> 
 <div class="container">
     <h3>
-       КОМНАТЫ
+       Комнаты
     </h3>
     <div class="filter">
             <form action="#" method="post">

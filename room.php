@@ -32,7 +32,7 @@ include("header.php");
                 <p>Цена: <?=$room["cost"];?>₽</p>
                 <p>Описание: <br><?=$room["description"];?></p>
                 <p>Адрес: <?=$room["location"];?></p>
-                <a href="" class="btn">Забронировать</a>
+                <a href="roomOrder.php?id_room=<?=$id_room?>" class="btn">Забронировать</a>
                 
             </div>
   </div>

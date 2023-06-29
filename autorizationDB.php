@@ -22,7 +22,11 @@ if(!empty($_POST)){
             ];
             // echo "<script>location.href= '';</script>";
             if($_SESSION['user']['role']==1){
-                header("location:/admin/index.php");
+                header("location:/admin/admin.php");
+                exit();
+            }
+            elseif($_SESSION['user']['role']==3){
+                header("location:/employee/employee.php");
                 exit();
             }
             else{

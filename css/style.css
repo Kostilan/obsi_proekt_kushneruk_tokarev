@@ -16,6 +16,7 @@ a:hover{
 }
 h2{
   font-weight: 500;
+  font-size: 1.3em;
   /* text-align: center; */
 }
 .container{
@@ -64,6 +65,10 @@ header nav{
     flex-direction: row;
     justify-content: space-around;
     
+}
+header p{
+  padding-left:2em;
+  font-size: 1.2em;
 }
 
 /* Главная */
@@ -124,7 +129,7 @@ header nav{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Регистрация и авторизация */
+/* Регистрация и авторизация, также форма заявки */
 .container-form{
   display: flex;
   flex-direction: column;
@@ -138,11 +143,13 @@ header nav{
 }
 
 .input {
+  min-width: 13em;
   padding:0.5em;
   border:0;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.1);
   border-radius:1em;
   font-size: 1em;
+  border: 1px solid #ccc;
 }
 .form-control{
   margin-bottom:1em;
@@ -338,9 +345,6 @@ position: relative;
   object-fit: cover;
   margin-bottom: 1em;
 }
-
-
-
 .room p {
   margin-bottom: 5px;
   padding-left:2em;
@@ -398,4 +402,57 @@ padding: 1em;
   width: 45em;
   height: 35em;
 
+}
+
+/* Мои заявки */
+.order{
+  min-width: 30em;
+display: flex;
+flex-direction: column;
+margin-bottom: 2em;
+margin-left: 2em;
+}
+.order-body{
+  font-size: 1.5em;
+}
+
+/* Просмотр заявок сотрудником */
+.order-button {
+  display: flex;
+  flex-direction: row;
+}
+.order-button .btn{
+display: inline-block;
+margin-left: 3em;
+padding: 1em 2em;
+color: #fff;
+text-decoration: none;
+border-radius: 4px;
+}
+.order-button .green{
+background-color: rgb(30, 202, 30);
+}
+.order-button .red{
+  background-color: rgb(214, 31, 31);
+  }
+
+/* Стили для администратор */
+.link-admin{
+  display: inline-block;
+  margin-left: 3em;
+  padding: 1em 2em;
+  background-color: #FFDD2E;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.yellow{
+  background-color: #FFDD2E;
+}
+.red{
+  background-color: #cf2b2b;
+}
+.container-admin{
+margin-bottom: 2em;
+margin-left: 2em;
 }
